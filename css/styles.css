@@ -134,6 +134,7 @@ img {
 .contacts-link:focus {
   color: var(--page-color-second);
 }
+
 .contacts-list .item + .item {
   margin-left: 50px;
 }
@@ -179,9 +180,18 @@ img {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 
   text-align: center;
-  background-color: var(--page-bgcolor);
+  background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: url(../image/hero-bg.jpg);
+  /* background-color: var(--page-bgcolor); */
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 .hero-title {
   margin-bottom: var(--page-gap);
