@@ -197,7 +197,6 @@ img {
 
   text-align: center;
 
-  
   background-image: url(../image/hero-bg.jpg);
   background-color: var(--page-bgcolor);
   background-repeat: no-repeat;
@@ -265,14 +264,13 @@ img {
   margin: -1px;
 }
 .benefits-item-icon {
-padding-top: 25px;
-padding-bottom: 25px;
-padding-left: 100px;
-padding-right: 100px;
-margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 30px;
   background-color: rgb(245, 244, 250);
   border-radius: 4px;
-
 }
 
 .benefits-item .title {
@@ -315,7 +313,6 @@ margin-bottom: 30px;
 
   list-style: none;
 }
-
 .team-item {
   flex-basis: calc(100% / 4 - var(--page-gap));
   margin-top: var(--page-gap);
@@ -339,7 +336,37 @@ margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
 }
+.team-box-list {
+  display: flex;
+}
+.team-box-list .team-box-item {
+  display: flex;
 
+  border-radius: 50% 50%;
+
+  outline: 1px solid tomato;
+}
+.team-box-list .social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  fill: var(--page-text-color);
+}
+.team-box-list .social-link-icon {
+  width: 20px;
+  height: 20px;
+}
+.team-box-list .team-box-item:hover,
+.team-box-list .team-box-item:focus {
+  background-color: var(--page-color-second);
+}
+.team-box-list .social-link:hover,
+.team-box-list .social-link:focus {
+  fill: var(--page-color-first);
+}
 /*=== Portfolio ===*/
 /*== Search button ==*/
 .search-list {
