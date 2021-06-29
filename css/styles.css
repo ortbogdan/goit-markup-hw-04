@@ -264,6 +264,17 @@ img {
   height: 1px;
   margin: -1px;
 }
+.benefits-item-icon {
+padding-top: 25px;
+padding-bottom: 25px;
+padding-left: 100px;
+padding-right: 100px;
+margin-bottom: 30px;
+  background-color: rgb(245, 244, 250);
+  border-radius: 4px;
+
+}
+
 .benefits-item .title {
   margin-bottom: 10px;
 
