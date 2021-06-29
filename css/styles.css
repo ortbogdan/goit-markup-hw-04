@@ -318,6 +318,8 @@ img {
   margin-top: var(--page-gap);
   margin-left: var(--page-gap);
 
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
   font-size: 16px;
@@ -336,15 +338,20 @@ img {
   font-size: 16px;
   line-height: 1.19;
 }
+.team-item-disc {
+  margin-bottom: 16px;
+}
 .team-box-list {
   display: flex;
+  justify-content: center;
 }
 .team-box-list .team-box-item {
   display: flex;
 
   border-radius: 50% 50%;
-
-  outline: 1px solid tomato;
+}
+.team-box-list .team-box-item:not(:first-child) {
+  margin-left: 10px;
 }
 .team-box-list .social-link {
   display: flex;
@@ -353,7 +360,7 @@ img {
   width: 44px;
   height: 44px;
 
-  fill: var(--page-text-color);
+  fill: rgb(175, 177, 184);
 }
 .team-box-list .social-link-icon {
   width: 20px;
@@ -367,6 +374,29 @@ img {
 .team-box-list .social-link:focus {
   fill: var(--page-color-first);
 }
+
+/* === Section Clients === */
+.clients .title {
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  list-style: none;
+}
+.clients-item .clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid rgb(175, 177, 184);
+  border-radius: 4px;
+}
+.clients-link .clients-icon {
+  width: 106px;
+  height: 60px;
+}
+
 /*=== Portfolio ===*/
 /*== Search button ==*/
 .search-list {
