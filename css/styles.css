@@ -162,6 +162,10 @@ img {
 }
 .bottom > .container {
   display: flex;
+  align-items: baseline;
+}
+.bottom-box .social-item {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .post {
   list-style: none;
