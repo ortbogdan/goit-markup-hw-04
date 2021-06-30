@@ -125,6 +125,7 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 31px;
+  margin-left: 10px;
 
   text-decoration: none;
 
@@ -144,8 +145,6 @@ img {
   margin-left: 30px;
 }
 .contacts-icon {
-  margin-right: 10px;
-
   fill: currentColor;
 }
 
@@ -160,6 +159,9 @@ img {
   margin-bottom: 20px;
   padding: 0 0;
   color: var(--page-color-first);
+}
+.bottom > .container {
+  display: flex;
 }
 .post {
   list-style: none;
@@ -186,6 +188,18 @@ img {
   color: var(--page-color-second);
 }
 
+.bottom-box {
+  margin-left: 70px;
+}
+.bottom-join {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: var(--page-color-first);
+}
+
 /*== Hero ==*/
 .hero {
   padding-top: 200px;
@@ -197,7 +211,8 @@ img {
 
   text-align: center;
 
-  background-image: url(../image/hero-bg.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../image/hero-bg.jpg);
   background-color: var(--page-bgcolor);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -341,19 +356,19 @@ img {
 .team-item-disc {
   margin-bottom: 16px;
 }
-.team-box-list {
+.social-list {
   display: flex;
   justify-content: center;
 }
-.team-box-list .team-box-item {
+.social-list .social-item {
   display: flex;
 
   border-radius: 50% 50%;
 }
-.team-box-list .team-box-item:not(:first-child) {
+.social-list .social-item:not(:first-child) {
   margin-left: 10px;
 }
-.team-box-list .social-link {
+.social-list .social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -362,16 +377,16 @@ img {
 
   fill: rgb(175, 177, 184);
 }
-.team-box-list .social-link-icon {
+.social-list .social-link-icon {
   width: 20px;
   height: 20px;
 }
-.team-box-list .team-box-item:hover,
-.team-box-list .team-box-item:focus {
+.social-list .social-item:hover,
+.social-list .social-item:focus {
   background-color: var(--page-color-second);
 }
-.team-box-list .social-link:hover,
-.team-box-list .social-link:focus {
+.social-list .social-link:hover,
+.social-list .social-link:focus {
   fill: var(--page-color-first);
 }
 
